@@ -1,11 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Services.Interfaces;
+using WebApi.Core;
 using WebApi.Models;
 
 namespace WebApi.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
+[HtmlToPdfAuthorize]
 public class PdfController : ControllerBase
 {
     private readonly IConverterService _converterService;
