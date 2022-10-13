@@ -13,6 +13,11 @@
 - `Jwt::Key` JWT Key
 - `Jwt::Issuer` JWT Issuer
 
+**Database Instructions**
+1. Create a database using any name, suggested is `HtmlToPdf`
+2. Update Connection string with the name.
+3. Run application (migration will automatically run)
+
 **Note**
 1. By configuring the app download chromium, we can get rid of Chrome dependency
 Check `HtmlConverter.Parser` for more info.
